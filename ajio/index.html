@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="sticky-top">
+     
+        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+         
+          <div class="container">
+            <a href="#" class="navbar-brand nav-link">AJIO</a>
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">MEN</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Clothes</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Shoes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown"><a href="#" class="nav-link" id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">WOMEN</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Dresses</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Shoes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown"><a href="#" class="nav-link"id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">KIDS</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Clothes</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Shoes</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown"><a href="#" class="nav-link"id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">BEAUTY</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Skin Care</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Cosmetics</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">ACCESSORIES</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="#" class="dropdown-item">Jewellery</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Accessories</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <button data-bs-toggle="modal" data-bs-target="#login" class="btn btn-secondary">login</button>
+          <div class="modal fade" id="login" tabindex="-1">
+            <div class="modal-dialog" >
+              <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="input-group"><span class="input-group-text">UserName
+                  </span>
+                  <input type="text" class="form-control" id="name"></div>
+                  <div class="input-group mt-3"><span class="input-group-text">Password</span>
+                   <input type="password" class="form-control" id="pwd">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary">login</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </nav>
+      
+    </header>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner" style=" height: 400px;">
+        <div class="carousel-item active">
+          <img src=https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="container mb-5 mt-3">
+      <div class="input-group">
+        <span class="input-group-text" id="search-icon"
+          ><i class="bi bi-search"></i
+        ></span>
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="search-icon"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- THE LEFT CONTAINER: FILTERS AND CATEGORY -->
+        <div class="col-3 bg-white">
+          <!-- CHECKBOXS -->
+          <p>
+            <a
+              href="#maincollapse"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              aria-controls="maincollapse"
+              class="text-dark text-decoration-none active"
+              >FILTER</a
+            ><hr>
+          </p>
+          <!-- dropdown collapse -->
+
+          <div class="collapse" id="maincollapse">
+            <!-- FIRST DROPDOWN GENDER  option 1-->
+            <p>
+              <a
+                href="#collapseGender"
+                id="option1"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseGender"
+                class="text-dark text-decoration-none"
+                >GENDER</a
+              >
+            </p>
+
+            <!-- dropdown items -->
+            <ul class="collapse" id="collapseGender" aria-labelledby="option1">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="men" />
+                <label for="men">Men</label>
+              </div>
+
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="women" />
+                <label for="women">Women</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Boys" />
+                <label for="Boys">Boys</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Girls" />
+                <label for="Girls">Girls</label>
+              </div>
+            </ul>
+
+            <hr />
+
+            <!-- DROPDOWN 2 CATEGORY  -->
+            <p>
+              <a
+                href="#collapseCategory"
+                id="option2"
+                data-bs-toggle="collapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseCategory"
+                class="text-dark text-decoration-none"
+                >CATEGORY</a
+              >
+            </p>
+
+            <!-- dropdown items -->
+            <ul
+              class="collapse"
+              id="collapseCategory"
+              aria-labelledby="option2"
+            >
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="tshirt" />
+                <label for="tshirt">Tshirts</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="shirts" />
+                <label for="shirts">Shirts</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Trousers" />
+                <label for="Trousers">Trousers</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Jeans" />
+                <label for="Jeans">Jeans</label>
+              </div>
+              <a
+                href="#moreCollapse"
+                id="option3"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="moreCollapse"
+                class="text-dark text-decoration-none"
+                >MORE</a
+              >
+            </ul>
+
+            <!-- the MORE content -->
+            <ul class="collapse" id="moreCollapse" aria-labelledby="option3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Footwear" />
+                <label for="Jeans">Footwear</label>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="Accessories"
+                />
+                <label for="Jeans">Accessories</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="MakeUp" />
+                <label for="Jeans">MakeUp</label>
+              </div>
+            </ul>
+            <hr />
+            <p><a href="#" class="text-dark text-decoration-none">PRICE</a></p>
+            <hr />
+            <p><a href="#" class="text-dark text-decoration-none">BRANDS</a></p>
+            <hr />
+            <p>
+              <a href="#" class="text-dark text-decoration-none">OCCASION</a>
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <!-- THE MAIN CONTENT -->
+        <div class="col">
+          <!-- ONE ROW FIRST COL -12 AND PICTURE -->
+          <div class="row">
+            <div class="col-12">
+              <h3>Black Friday Sale!</h3>
+            </div>
+            <!-- ITEM 1 -->
+            <div class="col-4 pt-3">
+              <!-- card item 1 -->
+              <div
+                class="card text-center"
+                data-bs-toggle="modal"
+                data-bs-target="#item1"
+              >
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240201/RBFt/65ba9fdc8cdf1e0df5dcb804/-473Wx593H-467027656-black-MODEL.jpg"
+                  alt="item-1"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">FANCY BAG</p>
+                  <p class="card-text">25$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 1 -->
+              <div
+                class="modal fade"
+                id="item1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog"
+                  style="min-width: 540px; min-height: auto"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        ORDER
+                      </h4>
+
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      
+<p>Item : Fancy Bag</p>
+                      <p>Price : 25$</p>
+                      <p>Please enter your address and confirm the order</p>
+                      <div class="input-group">
+                        <span class="input-group-text">Address</span>
+                        <textarea class="form-control" aria-label="address"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        CONFIRM ORDER
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- ITEM 2 -->
+            <div class="col-4 pt-3">
+              <!-- card item 2 -->
+              <div
+                class="card text-center"
+                data-bs-toggle="modal"
+                data-bs-target="#item2"
+              >
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20241121/4xyl/673ee1ca0f47f80c8798ece6/-473Wx593H-442695087-maroon-MODEL.jpg"
+                  alt="item-2"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">HOODIE</p>
+                  <p class="card-text">16$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 2 -->
+              <div
+                class="modal fade"
+                id="item2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        ORDER
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Item : Hoodie</p>
+                      <p>Price : 16$</p>
+                      <p>Please enter your address and confirm the order</p>
+                      <div class="input-group">
+                        <span class="input-group-text">Address</span>
+                        <textarea class="form-control" aria-label="address"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        CONFIRM ORDER
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="col-4 pt-3">
+              <!-- card item 3 -->
+              <div
+                class="card text-center"
+                data-bs-toggle="modal"
+                data-bs-target="#item3"
+              >
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240502/OjDg/6633bd3916fd2c6e6ae33fad/-473Wx593H-442528942-navy-MODEL2.jpg"
+                  alt="item-3"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">SHIRT</p>
+                  <p class="card-text">15$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 3 -->
+              <div
+                class="modal fade"
+                id="item3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        ORDER
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body"><p>Item : Shirt</p>
+                    <p>Price : 15$</p>
+                    <p>Please enter your address and confirm the order</p>
+                    <div class="input-group">
+                      <span class="input-group-text">Address</span>
+                      <textarea class="form-control" aria-label="address"></textarea>
+                    </div>
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 4 -->
+            <div class="col-4 pt-3">
+              <!-- card item 4 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item4">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240220/JIUb/65d4cac205ac7d77bb6a5d38/-473Wx593H-469581310-black-MODEL.jpg"
+                  alt="item-4"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">NIKE SHOE</p>
+                  <p class="card-text">32$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 4 -->
+              <div
+                class="modal fade"
+                id="item4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 5 -->
+            <div class="col-4 pt-3">
+              <!-- card item 5 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item5">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240910/rP62/66e05f126f60443f316b288d/-473Wx593H-410142330-39321-MODEL.jpg"
+                  alt="item-5"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">BELT</p>
+                  <p class="card-text">6$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 5 -->
+              <div
+                class="modal fade"
+                id="item5"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 6 -->
+            <div class="col-4 pt-3">
+              <!-- card item 6 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item6">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240521/qELN/664c8be516fd2c6e6a1674c1/-473Wx593H-467348992-black-MODEL.jpg"
+                  alt="item-6"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">LEATHER SHOE</p>
+                  <p class="card-text">23$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 6 -->
+              <div
+                class="modal fade"
+                id="item6"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 7 -->
+            <div class="col-4 pt-3">
+              <!-- card item 7 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item7">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg"
+                  alt="item-7"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">HEELS</p>
+                  <p class="card-text">28$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 7 -->
+              <div
+                class="modal fade"
+                id="item7"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 8 -->
+            <div class="col-4 pt-3">
+              <!-- card item 8 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item8">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240419/vBTr/6621c73f16fd2c6e6ac01b44/-473Wx593H-467262988-black-MODEL.jpg"
+                  alt="item-8"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">FROCK</p>
+                  <p class="card-text">13$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 8 -->
+              <div
+                class="modal fade"
+                id="item8"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 9 -->
+            <div class="col-4 pt-3">
+              <!-- card item 9 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item9">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240402/THWK/660beac316fd2c6e6a92d6f2/-473Wx593H-467217071-green-MODEL.jpg"
+                  alt="item-9"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">DINNER SET</p>
+                  <p class="card-text">6$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 9 -->
+              <div
+                class="modal fade"
+                id="item9"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 10 -->
+            <div class="col-4 pt-3">
+              <!-- card item 10 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item10">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240709/tR4W/668d22bf1d763220fa347533/-473Wx593H-4919544020-nudemyth-MODEL.jpg"
+                  alt="item-10"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">LIPCOLOR</p>
+                  <p class="card-text">10$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 10 -->
+              <div
+                class="modal fade"
+                id="item10"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 11 -->
+            <div class="col-4 pt-3">
+              <!-- card item 11 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item11">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240621/DkYs/6675ad196f60443f31717aa6/-473Wx593H-700111964-green-MODEL.jpg"
+                  alt="item-11"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">KURTA</p>
+                  <p class="card-text">16$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 11 -->
+              <div
+                class="modal fade"
+                id="item11"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM 12 -->
+            <div class="col-4 pt-3">
+              <!-- card item 12 -->
+              <div class="card text-center" data-bs-toggle="modal" data-bs-target="#item12">
+                <img
+                  src="https://assets.ajio.com/medias/sys_master/root/20240703/DpVO/66851e7c6f60443f31380810/-473Wx593H-467069260-black-MODEL.jpg"
+                  alt="item-12"
+                  class="card-img-top rounded"
+                />
+                <div class="card-body">
+                  <p class="card-title">SHOE</p>
+                  <p class="card-text">20$</p>
+                </div>
+                <div class="card-footer">
+                  <button class="col-12 btn btn-secondary">BUY</button>
+                </div>
+              </div>
+
+              <!-- modal item 12 -->
+              <div
+                class="modal fade"
+                id="item12"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        heading
+                      </h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">this is content</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid bg-dark mt-4 p-3">
+        <p class="text-light">Happy Shopping</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
