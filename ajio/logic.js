@@ -52,86 +52,74 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 1,
       name: "Fancy bag",
       price: "Rs 600",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240201/RBFt/65ba9fdc8cdf1e0df5dcb804/-473Wx593H-467027656-black-MODEL.jpg",
+      image: "./images/item1.avif",
       description: "a black bag with a lot of zips and stuffs",
     },
     {
       id: 2,
       name: "Hoodie",
       price: "Rs 550",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20241121/4xyl/673ee1ca0f47f80c8798ece6/-473Wx593H-442695087-maroon-MODEL.jpg",
+      image: "./images/item2.avif",
     },
     {
       id: 3,
       name: "Shirt",
       price: "Rs 570",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240502/OjDg/6633bd3916fd2c6e6ae33fad/-473Wx593H-442528942-navy-MODEL2.jpg",
+      image: "./images/item3.avif",
     },
     {
       id: 4,
       name: "Nike Shoe",
       price: "Rs 2500",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240220/JIUb/65d4cac205ac7d77bb6a5d38/-473Wx593H-469581310-black-MODEL.jpg",
+      image: "./images/item4.avif",
     },
     {
       id: 5,
       name: "Belt",
       price: "Rs 350",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240910/rP62/66e05f126f60443f316b288d/-473Wx593H-410142330-39321-MODEL.jpg",
+      image: "./images/item5.avif",
     },
     {
       id: 6,
       name: "Leather Shoe",
       price: "Rs 1350",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240521/qELN/664c8be516fd2c6e6a1674c1/-473Wx593H-467348992-black-MODEL.jpg",
+      image: "./images/item6.avif",
     },
     {
       id: 7,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item7.avif",
     },
     {
       id: 8,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item8.avif",
     },
     {
       id: 9,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item9.avif",
     },
     {
       id: 10,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item10.avif",
     },
     {
       id: 11,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item11.avif",
     },
     {
       id: 12,
       name: "Heels",
       price: "Rs 850",
-      image:
-        "https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg",
+      image: "./images/item12.avif",
     },
   ];
 

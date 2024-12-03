@@ -8,10 +8,6 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <form>
@@ -23,14 +19,12 @@
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              data-bs-target="#navbar1"
+              
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar1">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                   <a
@@ -38,7 +32,7 @@
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                   
                   >
                     MEN
                   </a>
@@ -56,7 +50,7 @@
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    
                   >
                     WOMEN
                   </a>
@@ -74,7 +68,7 @@
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    
                   >
                     KIDS
                   </a>
@@ -92,7 +86,7 @@
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    
                   >
                     BEAUTY
                   </a>
@@ -110,7 +104,7 @@
                   class="form-control me-2"
                   type="search"
                   placeholder="Search"
-                  aria-label="Search"
+                  
                 />
                 <button class="btn btn-outline-success" type="submit">
                   Search
@@ -132,8 +126,7 @@
               <a
                 href="#maincollapse"
                 data-bs-toggle="collapse"
-                aria-expanded="false"
-                aria-controls="maincollapse"
+               
                 class="text-dark text-decoration-none"
                 >FILTER</a
               >
@@ -150,18 +143,17 @@
                   id="option1"
                   data-bs-toggle="collapse"
                   role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseGender"
+                 
                   class="text-dark text-decoration-none"
                   >GENDER</a
                 >
               </p>
 
-              <!-- dropdown items -->
+              <!-- dropdown items -gender-->
               <ul
                 class="collapse"
                 id="collapseGender"
-                aria-labelledby="option1"
+                
               >
                 <div class="form-check">
                   <input
@@ -211,8 +203,7 @@
                   id="option2"
                   data-bs-toggle="collapse"
                   role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseCategory"
+                 
                   class="text-dark text-decoration-none"
                   >CATEGORY</a
                 >
@@ -222,7 +213,7 @@
               <ul
                 class="collapse"
                 id="collapseCategory"
-                aria-labelledby="option2"
+               
               >
                 <div class="form-check">
                   <input
@@ -264,15 +255,14 @@
                   href="#moreCollapse"
                   id="option3"
                   data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  aria-controls="moreCollapse"
+                 
                   class="text-dark text-decoration-none"
                   >MORE</a
                 >
               </ul>
 
               <!-- the MORE content -->
-              <ul class="collapse" id="moreCollapse" aria-labelledby="option3">
+              <ul class="collapse" id="moreCollapse" >
                 <div class="form-check">
                   <input
                     type="checkbox"
@@ -306,14 +296,13 @@
               <!-- price Category -->
               <p>
                 <a href="#priceCategory" id="option4" class="text-dark text-decoration-none" data-bs-toggle="collapse"
-                aria-expanded="false"
-                aria-controls="priceCategory">PRICE</a>
+               >PRICE</a>
               </p>
                <!-- dropdown items -->
                <ul
                class="collapse"
                id="priceCategory"
-               aria-labelledby="option4"
+               
              >
                <div class="form-check">
                  <input
@@ -348,15 +337,14 @@
               <!-- brand category -->
               <p>
                 <a href="#brandCategory" class="text-dark text-decoration-none" data-bs-toggle="collapse"
-                aria-expanded="false"
-                aria-controls="brandCategory">BRANDS</a>
+               >BRANDS</a>
               </p>
 
               <!-- dropdown items -->
               <ul
               class="collapse"
               id="brandCategory"
-              aria-labelledby="option4"
+              
             >
               <div class="form-check">
                 <input
@@ -412,12 +400,12 @@
               </div>
 
               <!-- login modal -->
-              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="loginModal">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h1 class="modal-title fs-5" id="modalHeading">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
                     </div>
                     <div class="modal-body">
                       <form action="" id="modalForm">
@@ -439,9 +427,6 @@
               <div
               class="modal fade"
               id="productDetailsModal"
-              tabindex="-1"
-              aria-labelledby="productDetailsModalLabel"
-              aria-hidden="true"
             >
               <div
                 class="modal-dialog"
@@ -457,7 +442,6 @@
                       type="button"
                       class="btn-close"
                       data-bs-dismiss="modal"
-                      aria-label="Close"
                     ></button>
                   </div>
                   <div class="modal-body">
@@ -490,7 +474,7 @@
                   "
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240201/RBFt/65ba9fdc8cdf1e0df5dcb804/-473Wx593H-467027656-black-MODEL.jpg"
+                    src="./images/item1.avif"
                     alt="item-1"
                     class="card-img-top rounded"
                   />
@@ -513,7 +497,7 @@
                  
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20241121/4xyl/673ee1ca0f47f80c8798ece6/-473Wx593H-442695087-maroon-MODEL.jpg"
+                    src="./images/item2.avif"
                     alt="item-2"
                     class="card-img-top rounded"
                   />
@@ -537,7 +521,7 @@
                   
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240502/OjDg/6633bd3916fd2c6e6ae33fad/-473Wx593H-442528942-navy-MODEL2.jpg"
+                    src="./images/item3.avif"
                     alt="item-3"
                     class="card-img-top rounded"
                   />
@@ -559,7 +543,7 @@
                   class="card text-center category-men category_shoes product-card" data-id="4"
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240220/JIUb/65d4cac205ac7d77bb6a5d38/-473Wx593H-469581310-black-MODEL.jpg"
+                    src="./images/item4.avif"
                     alt="item-4"
                     class="card-img-top rounded"
                   />
@@ -582,7 +566,7 @@
                 
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240910/rP62/66e05f126f60443f316b288d/-473Wx593H-410142330-39321-MODEL.jpg"
+                    src="./images/item5.avif"
                     alt="item-5"
                     class="card-img-top rounded"
                   />
@@ -603,7 +587,7 @@
                   
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240521/qELN/664c8be516fd2c6e6a1674c1/-473Wx593H-467348992-black-MODEL.jpg"
+                    src="./images/item6.avif"
                     alt="item-6"
                     class="card-img-top rounded"
                   />
@@ -625,7 +609,7 @@
                   class="card text-center category_women category_shoes product-card" data-id="7"
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240722/Mfgr/669e34741d763220fa0dff89/-473Wx593H-700216832-black-MODEL.jpg"
+                    src="./images/item7.avif"
                     alt="item-7"
                     class="card-img-top rounded"
                   />
@@ -648,7 +632,7 @@
                   
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240419/vBTr/6621c73f16fd2c6e6ac01b44/-473Wx593H-467262988-black-MODEL.jpg"
+                    src="./images/item8.avif"
                     alt="item-8"
                     class="card-img-top rounded"
                   />
@@ -670,7 +654,7 @@
                   class="card text-center product-card" data-id="9"
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240402/THWK/660beac316fd2c6e6a92d6f2/-473Wx593H-467217071-green-MODEL.jpg"
+                    src="./images/item9.avif"
                     alt="item-9"
                     class="card-img-top rounded"
                   />
@@ -692,7 +676,7 @@
                   
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240709/tR4W/668d22bf1d763220fa347533/-473Wx593H-4919544020-nudemyth-MODEL.jpg"
+                    src="./images/item10.avif"
                     alt="item-10"
                     class="card-img-top rounded"
                   />
@@ -715,7 +699,7 @@
                  
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240621/DkYs/6675ad196f60443f31717aa6/-473Wx593H-700111964-green-MODEL.jpg"
+                    src="./images/item11.avif"
                     alt="item-11"
                     class="card-img-top rounded"
                   />
@@ -738,7 +722,7 @@
                 
                 >
                   <img
-                    src="https://assets.ajio.com/medias/sys_master/root/20240703/DpVO/66851e7c6f60443f31380810/-473Wx593H-467069260-black-MODEL.jpg"
+                    src="./images/item12.avif"
                     alt="item-12"
                     class="card-img-top rounded"
                   />
