@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <label for="uname">Username</label><br /><br />
+    <input type="text" name="" id="uname" />
+    <label for="uname2">Username</label><br /><br />
+    <input type="text" name="" id="uname2" />
+    <button onclick="compare()">click</button>
+    <button onclick="getblah()">getItems</button>
+    <script>
+      function compare() {
+        let e1 = document.getElementById("uname");
+        let e2 = document.getElementById("uname2");
+
+        localStorage.setItem("Name1", "mahima");
+        localStorage.setItem("Name2", "mathew");
+
+        setTimeout(console.log("helo"), 2000);
+      }
+
+      function getblah() {
+        console.log(localStorage.getItem("uname"));
+        console.log(localStorage.getItem("uname2"));
+      }
+    </script> -->
+
+    <button
+      data-bs-toggle="modal"
+      data-bs-target="#login"
+      class="btn btn-secondary"
+    >
+      login
+    </button>
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">Login</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!--header-->
+          <div class="modal-body">
+            <div class="input-group">
+              <span class="input-group-text">UserName </span>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <!--input grp-->
+            <div class="input-group mt-3">
+              <span class="input-group-text">Password</span>
+              <input type="password" class="form-control" id="pwd" />
+            </div>
+            <!--input grp-->
+          </div>
+          <!--body-->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              login
+            </button>
+          </div>
+          <!--footer-->
+        </div>
+        <!--modal content-->
+      </div>
+      <!--dialog-->
+    </div>
+    <!--modal fade-->
+
+    <!-- login modal ends -->
+  </body>
+</html>
