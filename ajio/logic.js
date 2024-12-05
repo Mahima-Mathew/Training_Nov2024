@@ -97,28 +97,29 @@ document.addEventListener("DOMContentLoaded", () => {
       price: "Rs 850",
       image: "./images/item8.avif",
     },
+    //change the values from here,mahima
     {
       id: 9,
-      name: "Heels",
-      price: "Rs 850",
+      name: "DinnerSet",
+      price: "Rs 200",
       image: "./images/item9.avif",
     },
     {
       id: 10,
-      name: "Heels",
-      price: "Rs 850",
+      name: "Lipcolor",
+      price: "Rs 120",
       image: "./images/item10.avif",
     },
     {
       id: 11,
-      name: "Heels",
-      price: "Rs 850",
+      name: "Kurta",
+      price: "Rs 490",
       image: "./images/item11.avif",
     },
     {
       id: 12,
-      name: "Heels",
-      price: "Rs 850",
+      name: "Shoe",
+      price: "Rs 450",
       image: "./images/item12.avif",
     },
   ];

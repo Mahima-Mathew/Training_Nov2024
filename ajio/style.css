@@ -1,19 +1,69 @@
+/**
+REM values
+default values 16px
+1rem = 10px
+10/16 = 0.652 = 62.5% 
+
+FONT-SIZE 10 12 14 16 18 20 24 30 36 44 52 62 74 86 98
+
+SPACING 2  4  8  12  16 24  32  48  64  80  96  128
+
+Primary 
+Tints 
+
+GREYS #555  #333
+**/
+
+/* BOOTSTRAP BREAKPOINT
+-- SMALL SM , MEDIUM MD
+-- LARGE LG , X-LARGE XL , EXTRA EXTRA LARGE XXL
+*/
+
+html {
+  font-size: 62.5%;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.outer {
-  background-color: rgb(119, 117, 117);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
+  font-size: 1.8rem;
+  font-family: "Playfair Display";
 }
 
-.inner {
-  background-color: white;
-  padding: 20px 50px;
-  border-radius: 30px;
+header img {
+  height: 8.6rem;
+  width: 8.6rem;
 }
+
+.card {
+  border: none;
+}
+
+.card a {
+  display: none;
+}
+
+.anchor {
+  width: 100%;
+  padding: 1.2rem 0;
+  /* background-color: red; */
+}
+
+.card:hover .anchor {
+  background-color: red;
+  color: white;
+}
+
+/* .card:hover .card a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  background-color: #555;
+  padding: 1.2rem 0; */
+/* display: none; */
+/* margin-top: -2.4rem;
+} */
